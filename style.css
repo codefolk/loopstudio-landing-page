@@ -46,12 +46,14 @@ body{
     position:absolute;
     z-index: 9999;
 }
-.btn-primary{
+#button{
     border:0;
     position:absolute;
     right:1rem;
     top:2rem;
     z-index:99999;
+    background: transparent;
+    outline: 0;
 }
 .slide-menu{
     width: 100%;
