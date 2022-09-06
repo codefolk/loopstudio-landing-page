@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     width: 100%;
 }
 
@@ -33,7 +33,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:50%;
+    height:100%;
 }
 .head{
     position:relative;
@@ -86,15 +86,21 @@ body{
 .show-nav{
     display: block;
 }
+.top-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .top-heading h1{
+    max-width: 13ch;
     text-transform: uppercase;
     position:absolute;
-    margin:10rem 2rem;
-    padding:10px 2rem 10px 1rem;
+    margin:11rem auto;
+    margin-bottom: 0;
+    padding:1rem;
     font-family: var(--Josfin);
     color:#fff;
-    font-size: 2.5rem;
-    line-height: 0.9;
+    font-size: 2.2rem;
     font-weight: var(--josefinFont);
     z-index: 1;
     border:2px solid #fff;
@@ -114,17 +120,18 @@ body{
     align-items: center;
 }
 .interactive{
-    width: 300px;
-    margin:35rem 0;
+    width: 90%;
+    margin:700px 0;
     margin-bottom:0;
     align-self: center;
 }
 #section2-heading{
-    width:15ch;
+    max-width:20ch;
     text-align:center;
     text-transform: uppercase;
     font-family:var(--Josfin);
-    font-size: 2rem;
+    font-size: clamp(1.9rem, 2.5vw, 3rem);    
+    padding:1rem;
     margin:2rem auto;
     font-weight:100;
     line-height:0.9;
@@ -134,16 +141,16 @@ body{
     font-family:var(--Alata);
     color: rgba(0,0,0,0.55);
     font-size: 15px;
-    width:30ch;
+    max-width:30ch;
     font-weight: 300;
     line-height: 1.5;
     margin:1rem auto;
 }   
 .same-sections{
     width:90%;
-    height:12vh;
     background-repeat: no-repeat;
     background-size: cover;
+    filter:brightness(80%);
 }
 .section-main {
     width:100%;
@@ -169,6 +176,8 @@ body{
     width:9ch;
     line-height:0.95;
     font-weight:300;
+    filter:brightness(2);
+
 }
 
 #image1{
