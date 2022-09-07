@@ -105,6 +105,10 @@ body {
 .slide-menu a:first-child {
     margin-top: 5rem;
 }
+.slide-menu a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .show-nav {
     display: block;
@@ -194,7 +198,9 @@ body {
     background-size: cover;
     filter: brightness(80%);
 }
-
+.same-sections:hover{
+    filter:grayscale(80%);
+}
 .section-main {
     width: -moz-min-content;
     width: min-content;
@@ -264,8 +270,7 @@ body {
 }
 
 #image7 {
-    background-image: url("./images/mobile/image-curiosity.jpg");
-    filter: brightness(70%), contrast(50%);
+    background-image: url("./images/mobile/image-curiosity.jpg");   
 }
 
 #image8 {
@@ -282,6 +287,11 @@ body {
     font-size: 1rem;
     letter-spacing: 2px;
     color: rgba(0, 0, 0, 0.85);
+}
+.section3-button:hover{
+    background-color: #000;
+    color: #fff;
+    border:2px solid #000;
 }
 
 .section-3 h1 {
@@ -323,6 +333,9 @@ body {
     font-family: var(--Alata);
     font-weight: 400;
 }
+.footer-nav a:hover{
+    text-decoration: underline;
+}
 
 .socials {
     display: -ms-flexbox;
@@ -330,7 +343,6 @@ body {
     gap: 1rem;
     margin: 2rem auto 0 auto;
 }
-
 .footer p {
     color: var(--VdarkGray);
     font-family: var(--Alata);
@@ -435,7 +447,7 @@ body {
     .image img {
         width: 60%;
         padding: 5rem 2rem;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 31%, 71% 31%, 71% 100%, 0 100%, 0% 80%, 0% 20%);
+        clip-path: polygon(0 0, 100% 0, 100% 31%, 71% 31%, 71% 100%, 0 100%, 0% 80%, 0% 20%);
         clip-path: polygon(0 0, 100% 0, 100% 31%, 71% 31%, 71% 100%, 0 100%, 0% 80%, 0% 20%);
 
     }
@@ -504,9 +516,11 @@ body {
     }
 
     .same-sections h2 {
-        margin-top: 18rem;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 20rem;
         margin-left: 1rem;
-        width: 9ch;
+        width: 11vw;
         line-height: 0.95;
 
     }
@@ -636,5 +650,9 @@ body {
         right: 7.5rem;
         bottom: 5rem;
     }
-
+    .same-sections h2 {
+        font-size: 1.7rem;
+        margin-top: 22rem;
+        margin-left: 1rem;
+    }
 }

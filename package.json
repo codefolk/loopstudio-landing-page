@@ -4,7 +4,8 @@
   "description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "live": "live-server"
+    "live": "live-server",
+	"parcel": "npx parcel src/index.html"
   },
   "author": "",
   "license": "ISC"
